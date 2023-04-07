@@ -30,18 +30,19 @@
     {% block content %}
     <main class="main">
         <div class="notice-card">
-            <div class="flower">
-                <p>❀</p>
+            <div class="flower" id="flower">
+                <p class="f1">❀</p>
                 <p>ceilings music video out now!</p>
-                <p>✿</p>
+                <p class="f2">✿</p>
             </div>
             
-            <div class="flower">
-                <p>✿</p>
-                <p>watch <a class="notice-link" href="https://www.youtube.com/watch?v=2bpMSpFTdzM" target="_blank">here</a>.</p>
-                <p>❀</p>
+            <div class="flower bottom" id="flower">
+                <p class="f2">✿</p>
+                <p>watch <a class="notice-link" id="notice-link" href="https://www.youtube.com/watch?v=2bpMSpFTdzM" target="_blank">here</a>.</p>
+                <p class="f1">❀</p>
             </div>
         </div>
+        <script src="{{ get_url(path='javascript/script.js', cachebust=true) }}"></script>
     </main>
     {% endblock content %}
 
