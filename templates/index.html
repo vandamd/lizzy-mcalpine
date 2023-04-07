@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="{% block description %}{{ section.description | default(value=config.description) }}{% endblock description %}">
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    <link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
+    <link rel="icon" href="{{ config.extra.icon | safe }}">
+</head>
+
+<body>
+    <video playsinline autoplay muted loop poster="{{ get_url(path='media/thumbnail.jpg') }}" id="bgvid">
+        <source src="{{ get_url(path='media/video.mp4') }}" type="video/mp4">
+    </video>
+
+    {% block header %}
+    <header class="header">
+        <div class="header-card">
+            <h1 class="title">Lizzy McAlpine</h1>
+            <div class="misc">
+                <a href="https://store.lizzymcalpine.com/" target="_blank">Shop</a>
+                <a href="https://lizzymcalpine.com/tour/" target="_blank">Tour</a>
+                <a href="https://lizzymcalpine.us10.list-manage.com/subscribe?u=555cba7d13bb096a646aff8e9&id=9fcbf5b20e" target="_blank">Newsletter</a>
+            </div>
+        </div>
+    </header>
+    {% endblock header %}
+
+    {% block content %}
+    <main class="main">
+        <div class="notice-card">
+            <div class="flower">
+                <p>❀</p>
+                <p>ceilings music video out now!</p>
+                <p>✿</p>
+            </div>
+            
+            <div class="flower">
+                <p>✿</p>
+                <p>watch <a class="notice-link" href="https://www.youtube.com/watch?v=2bpMSpFTdzM" target="_blank">here</a>.</p>
+                <p>❀</p>
+            </div>
+        </div>
+    </main>
+    {% endblock content %}
+
+    {% block footer %}
+    <footer class="footer">
+        <div class="footer-card" id="music">
+            <div class="music">
+                <a href="https://music.amazon.com/artists/B079WP46TP/lizzy-mcalpine" target="_blank" rel="noopener noreferrer">Amazon Music</a>
+                <a href="https://music.apple.com/us/artist/lizzy-mcalpine/1350245112" target="_blank" rel="noopener noreferrer">Apple Music</a>                
+                <a href="https://lizzymcalpine.bandcamp.com/" target="_blank" rel="noopener noreferrer">Bandcamp</a>
+                <a href="https://www.deezer.com/us/artist/14157839" target="_blank" rel="noopener noreferrer">Deezer</a>
+                <a href="https://soundcloud.com/lizzymcalpine" target="_blank" rel="noopener noreferrer">SoundCloud</a>                
+                <a href="https://open.spotify.com/artist/1GmsPCcpKgF9OhlNXjOsbS?si=eOJgm3mRQoe9BrwYmtirjQ" target="_blank" rel="noopener noreferrer">Spotify</a>
+            </div>
+        </div>
+
+        <div class="footer-card" id="social">
+            <div class="social">
+                <a href="https://www.facebook.com/lizzymcalpinemusic/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.instagram.com/lizzymcalpine/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.tiktok.com/@lizzymcalpine" target="_blank" rel="noopener noreferrer">TikTok</a>
+                <a href="https://twitter.com/lizzymcalpine" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a href="https://www.youtube.com/@LizzyMcAlpine" target="_blank" rel="noopener noreferrer">YouTube</a>
+            </div>
+        </div>
+    </footer>
+    {% endblock footer %}
+</body>
+</html>
