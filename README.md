@@ -3,9 +3,9 @@
 A concept redesign of the [Lizzy McAlpine's](http://www.lizzymcalpine.com/) website.
 
 ## Demo
-[![Lizzy McAlpine](/static/media/lizzy-site.gif)](https://lizzy.vandam.tech)
+[![Lizzy McAlpine](/static/media/lizzy-site.gif)](https://lizzy.vandamdinh.com)
 
-You can view a live demo over at [lizzy.vandam.tech](https://lizzy.vandam.tech).
+You can view a live demo over at [lizzy.vandamdinh.com](https://lizzy.vandamdinh.com).
 
 ## Goals
 - Make it easier to navigate Lizzy's links and social media
